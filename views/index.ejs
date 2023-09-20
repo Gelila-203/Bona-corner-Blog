@@ -1,0 +1,54 @@
+<!--<h1> Home Page </h1>-->
+<div class="author">
+    <!-- <h1 class="author__heading">
+        Hi, I am ...
+    <p class="author__body">
+        A law school graduate, Human right advocator...
+
+    </p> -->
+    <!-- <img src="/img/ethiopia.png" alt="Ethiopia Image" class="ethiopia-image" width="800" height="528"> -->
+    <h1 class="author__heading">
+        News
+    </h1>
+</div>
+
+<!-- <img src="/img/ethiopia.png" alt="Ethiopia Image" class="ethiopia-image" width="800" height="528"> -->
+
+
+
+<div class="postSection">
+    <section class="articles">
+        <h2 class="articles__headings"> Latest Posts</h2>
+
+        <ul class="article-ul">
+            <% data.forEach(post=> {%>
+                <li class="article-li">
+                    <a href="/post/<%=post._id%>">
+                        <span>
+                            <%= post.title %>
+                        </span>
+                        <span class="article-list__date">
+                            <%= post.createdAt.toDateString() %>
+                        </span>
+                    </a>
+                </li>
+
+                <% });
+            %>
+
+        </ul>
+
+        <% if (nextPage !==null) {
+                %>
+                    <a href="/?page=<%= nextPage %>" class="pagination"> &lt; View older posts
+                    </a>
+                <% }
+             %>
+                <a href="/?page" class="Back"> &lt Back Pervious Page </a>
+             <%
+         %>
+
+
+    </section>
+
+</div>

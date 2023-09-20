@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- locals.title %></title>
+    <meta name="description" content="<%= locals.description %>">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" defer src="/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+ 
+  
+
+</head>
+<body>
+    <%- include('../partials/search.ejs') %>
+   <!--Main Layout -->
+   <div class="container">
+
+    <%- include('../partials/header.ejs') %>
+
+    <main class="main">
+        <%- body %>
+
+    </main>
+
+
+    <%- include('../partials/footer.ejs') %>
+
+   </div>
+  
+
+</body>
+</html>

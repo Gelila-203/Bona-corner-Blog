@@ -1,0 +1,30 @@
+
+<div class="admin-title">
+    <h2> Pictures</h2> 
+
+</div>
+Pictures
+</br>
+<a href="/dashboard" class="previous">&laquo;Back to Dashboard</a>
+<div>
+    <!-- <a href="/dashboard" class="">Back to Dashboard </a> -->
+    <!-- <a href="/dashboard" class="next">Next &raquo;</a> -->
+    <form action="/photos" method="POST">
+        <label for = "title"><b>Image Title  </b> </label>
+        <input type="text" placeholder="image Title" name="titleImage">
+    
+        <label for ="image"><b>image </b> </label>
+        <input type="file"  placeholder="Post Image" value="image" name="image">
+       
+        <!-- to add an image in the post -->
+         <!-- 
+             <input type="file" name="file"  > 
+             <input type="file"  placeholder="Post Image" value="image" name="image">
+             <input type="submit" value="Save Img" class="btn"> 
+        -->
+    
+        <input type="submit" value="Add" class="btn">
+    
+    </form>
+
+</div>

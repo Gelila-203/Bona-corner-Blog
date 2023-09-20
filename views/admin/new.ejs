@@ -1,0 +1,19 @@
+<div>
+    <h1>
+        New Post Page
+    </h1>
+    <form action='admin/new' method='POST'>
+        Image: <input type="file" name="file"  action="/upload"> 
+        <input   type="submit" name='' value="Save a Picture"/><br/>
+        Title: <input type= 'text' name="title:"/><br/>
+        Body:<input type="text"  name="color" /><br/>
+        createdAt : <input type="date" name='Date' /><br/>
+        updatedSt: <input type="date" name='Date' /><br/>
+        <input type="submit" name='' value="create Post"/>  
+        <input action='/admin/draft' type="submit" name='' value="Save as Draft"/>              
+    </form>
+</div>
+<div>
+    <a href="/dashboard" class="">Back to Dashboard </a>
+
+</div>

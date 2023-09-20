@@ -1,0 +1,38 @@
+<div class="admin-title">
+    <h2> Draft pages</h2> 
+    <a href="/dashboard">&larr; Back </a>
+
+</div>
+
+<!-- <a href="/dashboard">&larr; Back </a> -->
+
+<div class="admin-title">
+    <h2> View / Edit Post </h2> 
+
+    <form action="/delete-post/<%= data._id %>?_method=DELETE " method="POST">
+        <input type="submit" value="Delete" class="btn-delete btn">
+    </form>
+    
+    <!-- to create save as draft button -->
+    <form action="/draft/<%= data._id %>?_method=PUT " method="POST">
+        <input type="submit" value="Save as draft" class=" btn">
+    </form>
+    <!-- To cancel the changes -->
+    <form action="/draft/<%= data._id %>?_method=DELETE " method="POST">
+        <input type="submit" value="Cancel" class=" btn">
+    </form>
+
+</div>
+
+<form action="/draft/<%= data._id %>?_method=PUT" method="POST">
+    <label for = "title"><b>Title  </b> </label>
+    <input type="text" placeholder="Post Title" name="title" value="<%= data.title %>">
+
+    <label for ="body"><b> Content  </b> </label>
+    <textarea name="body" cols="50" rows="10"> <%= data.body %> </textarea>
+    <!-- to add an image in the post -->
+     <!-- <input type="file" name="file"  >  -->
+
+    <input type="submit" value="Update" class="btn">
+
+</form>
